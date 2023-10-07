@@ -7,13 +7,13 @@ export default function UserCard({ user }) {
       <div className={styles.imageBox}>
         <img
           className={styles.image}
-          src={user.image}
-          alt={`user${user.id}'s profile`}
+          src={user.avatar}
+          alt={`${user.first_name}'s profile`}
         />
       </div>
 
       <div className={styles.infoBox}>
-        <h2>{user.name}</h2>
+        <h2>{`${user.first_name} ${user.last_name}`}</h2>
         <h4>{user.email}</h4>
       </div>
     </li>
